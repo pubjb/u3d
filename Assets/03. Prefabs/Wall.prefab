@@ -105,3 +105,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb140d0d50d2a9042bb96ce5ad03a01d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sparkEffect: {fileID: 100006, guid: 0438351a6e6422d43a09930e9be00ee9, type: 2}

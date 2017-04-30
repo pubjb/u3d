@@ -44,7 +44,11 @@ public class PlayerCtrl : MonoBehaviour
 
         Vector3 moveDir = (Vector3.forward * v) + (Vector3.right * h);
         tr.Translate(moveDir * moveSpeed * Time.deltaTime, Space.Self);
-        tr.Rotate(Vector3.up * Time.deltaTime * rotSPeed * Input.GetAxis("Mouse X"));
+
+        if (Input.GetMouseButton(1))
+        {
+            tr.Rotate(Vector3.up * Time.deltaTime * rotSPeed * Input.GetAxis("Mouse X"));
+        }
 
         if (v >= 0.1f)
         {
